@@ -41,8 +41,7 @@ for(var i=0;i<15;i++){
 
 //所有斜向的赢法
 for(var i=0;i<11;i++){
-	for(var j=0;j<11;j++){
-		for(var k=0;k<5;k++){
+	for(var j=0;j<11;j++){		for(var k=0;k<5;k++){
 			wins[j+k][i+k][count] = true;
 		}
 		count++;
@@ -75,15 +74,10 @@ var context = chess.getContext('2d');
 
 context.strokeStyle='#4e4747';
 
-var logo = new Image();
 
-logo.src='./image/logo.png';
-logo.onload=function(){
 
-	context.drawImage(logo,0,0,450,450);
 	drawChessBoard();
 	
-}
 
 
 var drawChessBoard=function(){
